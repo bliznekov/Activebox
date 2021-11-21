@@ -1,0 +1,127 @@
+.testimonials {
+
+  &-item {
+    width: 100vw;
+    height: 32vw;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $vinous;
+
+    @media (max-width: 768px) {
+      display: block;
+      height: auto;
+    }
+
+    .testimonials-img {
+      width: 49vw;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      @media (max-width: 768px) {
+        width: 100vw;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .testimonials-text {
+      width: 51vw;
+
+      @media (max-width: 768px) {
+        width: 100vw;
+      }
+
+      .testimonials-tittle {
+        font-family: Cardo;
+        font-size: 36px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 48px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $white;
+        vertical-align: Center;
+        margin: 0 22% 38px 16%;
+
+        @media (max-width: 1024px) {
+          font-size: 24px;
+          line-height: 32px;
+          margin: 10px 22% 10px 16%;
+        }
+      }
+
+      .testimonials-post {
+        font-family: Raleway;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 15px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $white;
+        text-transform: uppercase;
+        vertical-align: Center;
+        margin: 0 22% 0 16%;
+
+        @media (max-width: 1024px) {
+          font-size: 12px;
+          line-height: 14px;
+          margin: 0 22% 15px 16%;
+        }
+      }
+
+    }
+
+    &:nth-child(2) {
+      background-color: $formen;
+    }
+
+    &:nth-child(4) {
+      background-color: $formen;
+    }
+  }
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-track {
+  display: flex;
+  align-items: flex-start;
+}
+
+/* Точки (булиты) */
+.testimonials .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonials .slick-dots li {
+  list-style: none;
+  margin: 24px 22px 0;
+}
+
+/* Активная точка */
+.testimonials .slick-dots li.slick-active button {
+  background-color: $vinous;
+}
+
+/* Элемент точки */
+.testimonials .slick-dots li button {
+  font-size: 0;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 1px solid $vinous;
+  background-color: transparent;
+}

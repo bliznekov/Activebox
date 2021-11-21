@@ -1,0 +1,16 @@
+@mixin link {
+  margin: auto;
+  display: block;
+  width: 23rem;
+  height: 4.81rem;
+  font-family: Raleway;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 4.81rem;
+  letter-spacing: 0em;
+  text-align: center;
+  color: $white;
+  background-color: $orange;
+  text-transform: uppercase;
+}

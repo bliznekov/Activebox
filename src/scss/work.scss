@@ -1,0 +1,120 @@
+.work {
+  width: 100%;
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+
+    @media (max-width: 1024px) {
+      display: block;
+    }
+  }
+
+
+  &-item {
+    position: relative;
+    width: 24.9%;
+    overflow: hidden;
+    margin: 0.05%;
+
+    @media (max-width: 1024px) {
+      width: 33.23333%;
+      margin: -0.20% 0.05%;
+    }
+
+
+
+    &-img {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      padding: 0 0 100% 0;
+      transition: 1s;
+
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+
+    &-mask {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $orange80;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transform: rotate(340deg) scale(0.1) Rotate3d(1, 1, 1, 180deg);
+      transition: 1s;
+
+      .mask-tittle {
+        font-family: Raleway;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 60px;
+        text-align: center;
+        letter-spacing: 0em;
+        color: $white;
+        text-transform: uppercase;
+      }
+
+      .mask-subtittle {
+        font-family: Raleway;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 21px;
+        text-align: center;
+        letter-spacing: 0em;
+        color: $white;
+      }
+    }
+
+    &:hover .work-item-mask {
+      opacity: 1;
+      transform: rotate(0) scale(1) Rotate3d(1, 1, 1, 0deg);
+    }
+
+    &:hover .work-item-img {
+      transform: scale(1.2);
+    }
+
+    &:active .work-item-mask {
+      background-color: $redorange80;
+    }
+  }
+}
+
+.work ul .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.work ul .slick-dots li {
+  list-style: none;
+  margin: 24px 22px 0;
+}
+
+.work ul .slick-dots li.slick-active button {
+  background-color: $vinous;
+}
+
+.work ul .slick-dots li button {
+  font-size: 0;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 1px solid $vinous;
+  background-color: transparent;
+}

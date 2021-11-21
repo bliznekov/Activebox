@@ -1,0 +1,66 @@
+@import "../scss/reset.scss";
+@import "../scss/cdn.scss";
+@import "../scss/varibles.scss";
+@import "../scss/mixins.scss";
+@import "../scss/header.scss";
+@import "../scss/banner.scss";
+@import "../scss/work.scss";
+@import "../scss/team.scss";
+@import "../scss/testimonials.scss";
+@import "../scss/download.scss";
+@import "../scss/footer.scss";
+
+.section {
+  max-width: 1170px;
+  margin: auto;
+  position: relative;
+  padding: 0 15px;
+  z-index: 1;
+
+  @media (max-width: 1200px) {
+    max-width: 970px;
+  }
+
+  @media (max-width: 1024px) {
+    max-width: 750px;
+  }
+
+  @media (max-width: 768px) {
+    max-width: 90%;
+  }
+
+  @media (max-width: 420px) {
+    max-width: 100%;
+  }
+
+  @media (max-width: 320px) {
+    max-width: 100%;
+  }
+}
+
+html {
+  @media (max-width: 1024px) {
+    font-size: 15px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 13px;
+  }
+
+  @media (max-width: 420px) {
+    font-size: 12px;
+  }
+
+  @media (max-width: 320px) {
+    font-size: 10px;
+  }
+}
+
+body {
+  @media (max-width: 768px) {
+    &.lock {
+      overflow: hidden;
+    }
+  }
+
+}

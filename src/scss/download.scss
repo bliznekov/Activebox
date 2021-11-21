@@ -1,0 +1,39 @@
+.download {
+  padding: 77px 0 114px;
+
+  &-tittle {
+    font-family: Raleway;
+    font-size: 1.88rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 4.38rem;
+    letter-spacing: 0em;
+    text-align: center;
+    color: $black;
+  }
+
+  &-subtittle {
+    font-family: Raleway;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.875rem;
+    letter-spacing: 0em;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 44px;
+  }
+
+  &-link a {
+    @include link;
+
+    &:hover {
+      background-color: $redorange;
+    }
+
+    &:active {
+      box-shadow: 0 0 15px 0 rgba(255, 67, 67);
+      background-color: $orange;
+    }
+  }
+}

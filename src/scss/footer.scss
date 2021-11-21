@@ -1,0 +1,106 @@
+footer {
+  background-color: $footertop;
+
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 71px 15px 30px;
+
+    @media (max-width: 768px) {
+      display: block;
+      padding: 71px 15px 30px;
+    }
+
+    &-item {
+      width: 370px;
+
+      @media (max-width: 768px) {
+        width: 100%;
+        margin-bottom: 53px;
+      }
+
+      h5 {
+        font-family: Raleway;
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.312rem;
+        letter-spacing: 0em;
+        text-align: center;
+        text-transform: uppercase;
+        color: $white;
+        margin-bottom: 29px;
+
+      }
+
+      &:nth-child(2) h5 {
+        margin-bottom: 48px;
+      }
+
+      .item-subtittle {
+        font-family: Raleway;
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.312rem;
+        letter-spacing: 0em;
+        text-align: center;
+        color: $white;
+      }
+
+      .social-item {
+        display: flex;
+        justify-content: center;
+
+        .social-logo {
+          margin: 0 15px;
+          font-size: 39px;
+
+          i {
+            color: $halfblackgray;
+          }
+
+          .fa-facebook-square:hover {
+            color: #3b5998;
+            transition: 0.6s;
+          }
+
+          .fa-twitter-square:hover {
+            color: #1faee9;
+            transition: 0.6s;
+          }
+
+          .fa-linkedin:hover {
+            color: #2867B2;
+            transition: 0.6s;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.footer-buttom {
+  padding: 27px 15px 21px;
+  background-color: $footerbuttom;
+
+  p {
+    font-family: Raleway;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.312rem;
+    letter-spacing: 0em;
+    text-align: center;
+    color: $footercopyright;
+
+    /*     @media (max-width: 768px) {
+      width: 100%;
+    } */
+
+    span {
+      color: $white;
+    }
+  }
+}
