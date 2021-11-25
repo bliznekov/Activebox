@@ -76,7 +76,6 @@
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid $gray;
-    /* margin-bottom: 130px; */
 
     div {
       position: relative;
@@ -158,10 +157,6 @@
       }
     }
 
-    @media (max-width: 1024px) {
-      margin-bottom: 100px;
-    }
-
     @media (max-width: 768px) {
       height: 56px;
 
@@ -221,6 +216,10 @@
         box-shadow: 0 0 15px 0 rgba(255, 67, 67);
         background-color: $orange;
       }
+    }
+
+    @media (max-width: 768px) {
+      margin-top: 50px;
     }
   }
 
