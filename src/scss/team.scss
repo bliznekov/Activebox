@@ -15,6 +15,10 @@
       margin: 0 15px;
       width: 270px;
 
+      @media (max-width: 1200px) {
+        width: 100%;
+      }
+
       @media (max-width: 420px) {
         width: 90%;
         margin: 0 15px;
@@ -23,8 +27,7 @@
       .team-card-img {
         overflow: hidden;
         display: flex;
-        width: 270px;
-        height: 270px;
+        width: 100%;
         align-items: center;
         justify-content: center;
         margin-bottom: 30px;
@@ -34,11 +37,12 @@
         }
 
         img {
-          height: 100%;
+          width: 100%;
         }
       }
 
       .team-card-name {
+        width: 100%;
         font-family: Raleway;
         font-size: 1.5rem;
         font-style: normal;
@@ -50,6 +54,7 @@
       }
 
       .team-card-post {
+        width: 100%;
         font-family: Raleway;
         font-size: 1.13rem;
         font-style: normal;
@@ -63,6 +68,7 @@
       }
 
       .team-card-subtittle {
+        width: 100%;
         font-family: Raleway;
         font-size: 1.13rem;
         font-style: normal;

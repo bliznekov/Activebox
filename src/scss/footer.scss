@@ -4,18 +4,29 @@ footer {
   .footer-top {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 -15px;
     padding: 71px 15px 30px;
 
     @media (max-width: 768px) {
-      display: block;
-      padding: 71px 15px 30px;
+      justify-content: center;
     }
 
+
     &-item {
-      width: 370px;
+      width: 340px;
+      margin: 0 15px;
+
+      @media (max-width: 1200px) {
+        width: 290px;
+      }
+
+      @media (max-width: 1024px) {
+        width: 200px;
+      }
 
       @media (max-width: 768px) {
-        width: 100%;
+        width: 340px;
         margin-bottom: 53px;
       }
 
